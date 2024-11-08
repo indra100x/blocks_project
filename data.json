@@ -1,0 +1,52 @@
+[
+  {
+    "type": "start",
+    "label": "Start"
+  },
+  {
+    "type": "set_variable",
+    "label": "Set variable",
+    "variable_name": "x",
+    "value": 5
+  },
+  {
+    "type": "loop",
+    "label": "Repeat 10 times",
+    "count": 10,
+    "blocks": [
+      {
+        "type": "print",
+        "label": "Print",
+        "text": "Hello, world!"
+      },
+      {
+        "type": "change_variable",
+        "label": "Change variable",
+        "variable_name": "x",
+        "change": 1
+      }
+    ]
+  },
+  {
+    "type": "condition",
+    "label": "x > 10",
+    "blocks": [
+        {
+            "type": "print",
+            "label": "Print",
+            "text": "x is greater than 10"
+        }
+    ],
+    "else": [
+        {
+            "type": "print",
+            "label": "Print",
+            "text": "x is less than or equal to 10"
+        }
+    ]
+},
+  {
+    "type": "end",
+    "label": "End"
+  }
+]
